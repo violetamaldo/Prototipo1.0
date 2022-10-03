@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="nota musical.ico">
+    <title>Prototipo 1.0</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a id="logo" href="index.html">Prototipo1.0</a>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="izq"></div>
+            <div class="main">
+                <div class="head">
+                    <h1>Encontrá nueva música</h1>
+                </div>
+                <div class="subhead">
+                    <p>¡Probá con alguno de nuestros buscadores!</p>
+                </div>
+                <form action="" class="search" method="POST">
+                    <div>
+                        <label for="buscador">Seleccioná un buscador:</label>
+                    </div>
+                    <div>
+                        <input list="buscadores" name="tipo" id="buscador">
+                        <datalist id="buscadores">
+                            <option value="Género"></option>
+                            <option value="Época"></option>
+                            <option value="País"></option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
+            </div>
+            <div class="der"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="about.html">Sobre nosotros</a>
+        </div>
+        <div>Derechos reservados @2022</div>
+
+    </footer>
+</body>
+
+</html>
