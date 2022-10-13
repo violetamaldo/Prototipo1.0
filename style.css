@@ -1,5 +1,5 @@
 body {
-    display: grid;    
+    display: grid;
 }
 
 header {
@@ -8,7 +8,7 @@ header {
     padding: .5rem;
     display: flex;
     flex-direction: row;
-    }
+}
 
 .header-logo {
     display: flex;
@@ -35,11 +35,20 @@ main {
     font-size: medium;
 }
 
-form {
+section>form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+
+}
+
+.form-row {
+    text-align: left;
+}
+
+.form-group {
+    text-align: left;
 }
 
 footer>div {

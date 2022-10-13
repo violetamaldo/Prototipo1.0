@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="nota musical.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Prototipo 1.0</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <a id="logo" href="index.html">Prototipo1.0</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left"></div>
+            <div class="section">
+                <div class="head">
+                    <h3>¿Tenés alguna sugerencia?</h3>
+                </div>
+
+                <div></div>
+
+                <form method="POST" action="/index.php" class="needs-validation" novalidate>
+
+                    <div class="form-row mt-5">
+                        <div class="col-md-12 mb-3">
+                            <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                            <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+                            <input type="text" class="form-control" id="validarApellidos" name="validarApellidos"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validarEmail">Email:<span class="red">*</span></label>
+                            <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validarTelefono">Teléfono:</label>
+                            <input type="number" class="form-control" id="validarTelefono" name="validarTelefono"
+                                max="999999999">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-12 mb-3">
+                            <label for="validarAsunto">Asunto:</label>
+                            <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+                        <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25"
+                            required></textarea>
+                    </div>
+
+                    <div class="form mb-10">
+                        <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+                        <button class="btn btn-success" type="reset" name="reset">Borrar</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="aside"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">&copy; Derechos reservados 2022</div>
+    </footer>
+</body>
+
+</html>
