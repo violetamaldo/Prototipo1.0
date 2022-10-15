@@ -3,6 +3,8 @@ TP desarrollo web
 
 Condiciones faltantes
 
+Página responsive con tres puntos de corte
+<br>
 Validacion con js para formulario de contacto
 <br>
 Fuentes locales o de google fonts
