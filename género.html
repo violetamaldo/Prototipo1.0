@@ -30,9 +30,33 @@
                 <div class="head">
                     <h1>¡Buscador por género!</h1>
                 </div>
-                
+                <form action="" class="search" method="POST">
+                    <div>
+                        <label for="buscador">Seleccioná un buscador:</label>
+                    </div>
+                    <div>
+                        <input list="listaGenero" name="género" id="buscadorGenero">
+                        <datalist id="listaGenero">
+                            <option value="Rock" id="rock"></option>
+                            <option value="Pop" id="pop"></option>
+                            <option value="Latina" id="latina"></option>
+                            <option value="Clásica" id="clasica"></option>
+                            <option value="Techno" id="techno"></option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit" value="Enviar" id="botonEnviar">
+                        <input type="reset" value="Borrar">
+                    </div>
+                </form>
             </div>
             <div class="aside"></div>
+            <div class="genero" id="rock"></div>
+            <div class="genero" id="pop"></div>
+            <div class="genero" id="latina"></div>
+            <div class="genero" id="clasica"></div>
+            <div class="genero" id="techno"></div>
         </div>
     </main>
     <footer>
