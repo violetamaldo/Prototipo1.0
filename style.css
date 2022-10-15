@@ -1,6 +1,12 @@
-body {
+/* body {
     display: grid;
-}
+    grid-template-areas: 
+    header header header header
+    main main main main
+    footer footer footer footer
+    ; 
+   
+} */
 
 header {
     margin: 10px;
@@ -32,6 +38,14 @@ main {
     flex-direction: column;
     text-align: center;
     font-size: medium;
+}
+
+#divisor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: aqua;
+    text-align: center;
+      
 }
 
 section>form {
