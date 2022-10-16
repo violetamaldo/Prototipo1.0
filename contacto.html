@@ -15,19 +15,23 @@
 
 <body>
     <header>
-        <div class="header-logo">
+        <div class="float-left">
             <a id="logo" href="index.html">Prototipo1.0</a>
+        </div>
+        <div class="float-right" id="social">
+            <a href="http://instagram.com" target="_blanck" id="instagram"><img src="img/instagram.png" width="30"
+                    height="30"></a>
+            <a href="http://facebook.com" target="_blanck" id="facebook"><img src="img/facebook.png" width="30"
+                    height="30"></a>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="left"></div>
+            <div></div>    
             <div class="section">
                 <div class="head">
                     <h3>¿Tenés alguna sugerencia?</h3>
                 </div>
-
-                <div></div>
 
                 <form method="POST" action="/index.php" class="needs-validation" novalidate>
 
@@ -69,20 +73,20 @@
                     </div>
 
                     <div class="form-group">
+                        <div class="col-md-12">
                         <label for="validarMensaje">Mensaje:<span class="red">*</span></label>
                         <textarea class="form-control" id="validarMensaje" name="validarMensaje" rows="3" min="25"
                             required></textarea>
+                        </div>
                     </div>
 
                     <div>
                         <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
                         <button class="btn btn-success" type="reset" name="reset">Borrar</button>
                     </div>
-
                 </form>
             </div>
-            <div class="aside"></div>
-        </div>
+            </div>
     </main>
     <footer>
         <div class="copyright">&copy; Derechos reservados 2022</div>
