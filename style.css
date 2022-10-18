@@ -1,9 +1,9 @@
 body {
     display: grid;
-    grid-template-areas: 
-'header header header'
-'main main main'
-'footer footer footer'; 
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer';
 }
 
 header {
@@ -12,12 +12,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    }
+}
 
 .header-logo {
     display: flex;
     align-items: center;
-    
+
 }
 
 main {
@@ -29,9 +29,10 @@ main {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(autofill, 1fr); /*(3, 1fr)*/
+    grid-template-columns: repeat(autofill, 1fr);
+    /*(3, 1fr)*/
     gap: 5px;
-    
+
 }
 
 .container>div {
@@ -45,6 +46,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -54,7 +56,7 @@ form {
 
 .form-group {
     text-align: left;
-        }
+}
 
 footer {
     grid-area: footer;
@@ -63,4 +65,25 @@ footer {
     flex-direction: column;
     gap: 5px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        max-width: fit-content;
+        min-height: fit-content;
     }
+   }
+
+@media screen and (max-width: 576px) {
+    iframe {
+        max-width: fit-content;
+        min-height: fit-content;
+    }
+ }
+
+@media screen and (max-width: 992px) {
+    iframe {
+        max-width: fit-content;
+        min-height: fit-content;
+    }
+  }

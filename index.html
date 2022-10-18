@@ -33,20 +33,20 @@
                     <p>¡Probá con alguno de nuestros buscadores!</p>
                 </div>
                 <form action="" class="search" method="POST">
-                    <div>
+                    <!-- <div>
                         <label for="buscador">Seleccioná un buscador:</label>
                     </div>
+                    <br> -->
                     <div>
-                        <input list="buscadores" name="tipo" id="buscador">
-                        <datalist id="buscadores">
-                            <option value="Género"></option>
-                            <option value="País"></option>
-                        </datalist>
+                        <select id="buscadores">
+                            <option value="_blanck"></option>
+                            <option value="Género">Género</option>
+                            <option value="País">País</option>
+                        </select>
                     </div>
                     <br>
                     <div>
                         <input type="submit" value="Enviar" id="botonEnviar">
-                        <input type="reset" value="Borrar">
                     </div>
                 </form>
             </div>
