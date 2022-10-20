@@ -42,12 +42,32 @@ main {
     font-size: medium;
 }
 
+.pulso:hover {
+    animation: pulse 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes pulse {
+    10% {
+        transform: scale(1.1);
+                }
+    25% {
+        color:blue
+    }
+    50% {
+        color:violet
+    }
+    75% {
+        color: purple;
+    }
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .form-row {
@@ -72,18 +92,18 @@ footer {
         max-width: fit-content;
         min-height: fit-content;
     }
-   }
+}
 
 @media screen and (max-width: 576px) {
     iframe {
         max-width: fit-content;
         min-height: fit-content;
     }
- }
+}
 
 @media screen and (max-width: 992px) {
     iframe {
         max-width: fit-content;
         min-height: fit-content;
     }
-  }
+}
