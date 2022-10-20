@@ -9,8 +9,6 @@ Validacion con js para formulario de contacto
 <br>
 Fuentes locales o de google fonts
 <br>
-una animación, transformación o transición
-<br>
 api rest desde js
 <br>
 Diseño: <br>checar<br>
