@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="notas musicales.ico">
+    <script src="js/index.js"></script>
     <title>Prototipo 1.0</title>
 </head>
 
@@ -27,7 +28,7 @@
             <div class="left"></div>
             <div class="section">
                 <div class="head">
-                    <h1 class="pulso">Encontrá nueva música</h1>
+                    <h1 id="pulso" class="pulso">Encontrá nueva música</h1>
                 </div>
                 <div class="subhead">
                     <p>¡Probá con alguno de nuestros buscadores!</p>
@@ -35,9 +36,9 @@
                 <form action="" class="search" method="POST">
                     <div>
                         <select id="buscadores">
-                            <option value="_blanck"></option>
-                            <option value="Género">Género</option>
-                            <option value="País">País</option>
+                            <option selected disabled hidden style='display: none' value=''></option>
+                            <option value="genero">Género</option>
+                            <option value="pais">País</option>
                         </select>
                     </div>
                     <br>
