@@ -1,9 +1,12 @@
 body {
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-stretch: semi-condensed;
     display: grid;
     grid-template-areas:
-        'header header header'
-        'main main main'
-        'footer footer footer';
+        'header'
+        'main'
+        'footer';
 }
 
 header {
@@ -15,6 +18,9 @@ header {
 }
 
 .header-logo {
+    font-family: 'Franklin Gothic Medium';
+    font-style: oblique;
+    font-size: xx-large;
     display: flex;
     align-items: center;
 
@@ -49,19 +55,22 @@ main {
 
 .pulsoActivado {
     animation: pulse 1s;
-    animation-iteration-count:3;
+    animation-iteration-count: 3;
 }
 
 @keyframes pulse {
     10% {
         transform: scale(1.1);
-                }
+    }
+
     25% {
-        color:blue
+        color: blue
     }
+
     50% {
-        color:violet
+        color: violet
     }
+
     75% {
         color: purple;
     }
