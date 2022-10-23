@@ -1,4 +1,4 @@
-function validarContacto(){
+window.onload = function validarContacto(){
     
     var formulario = document.getElementsByName("formulario")[0];
     console.log(formulario)
