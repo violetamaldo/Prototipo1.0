@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="notas musicales.ico">
     <title>Prototipo 1.0</title>
-    </head>
+    <script src="js/genero.js"></script>
+</head>
 
 <body>
     <header>
@@ -25,7 +26,7 @@
     <main>
         <div class="container">
             <div class="left"></div>
-            <div class="section">
+            <div class="section" id="section">
                 <div class="head">
                     <h1 id="pulso" class="pulso">¡Aquí podés buscar por género!</h1>
                 </div>
@@ -35,14 +36,13 @@
                     </div>
                     <br>
                     <div>
-                        <input list="listaGenero" name="género" id="buscadorGenero">
-                        <datalist id="listaGenero">
-                            <option value="Rock" id="rock"></option>
-                            <option value="Pop" id="pop"></option>
-                            <option value="Latina" id="latina"></option>
-                            <option value="Clásica" id="clasica"></option>
-                            <option value="Techno" id="techno"></option>
-                        </datalist>
+                        <select id="buscadorGenero">
+                            <option selected disabled hidden style='display: none' value=''></option>
+                            <option value="rock">rock</option>
+                            <option value="pop">pop</option>
+                            <option value="clasica">clásica</option>
+                            <option value="techno">techno</option>
+                        </select>
                     </div>
                     <br>
                     <div>
@@ -51,12 +51,7 @@
                     </div>
                 </form>
             </div>
-            <div class="aside"></div>
-            <div class="genero" id="rock"></div>
-            <div class="genero" id="pop"></div>
-            <div class="genero" id="latina"></div>
-            <div class="genero" id="clasica"></div>
-            <div class="genero" id="techno"></div>
+
         </div>
     </main>
     <footer>

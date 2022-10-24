@@ -94,6 +94,33 @@ form {
     text-align: left;
 }
 
+#genero{
+    width: min(100%, 1000px);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.card{
+    width: 230px;
+    margin-top: 100px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+.card img {
+    width: 100%;
+  }
+
+.card span{
+    color: #6e6e6e;
+    font-weight: 500;
+  }
+  
+
 footer {
     grid-area: footer;
     margin-top: 1rem;
@@ -115,7 +142,7 @@ footer {
             'main'
             'footer';
         grid-template: auto / 10rem 80rem 10 rem;
-        }
+    }
 
     .header-logo {
         font-size: large;
@@ -133,7 +160,7 @@ footer {
             'header'
             'main'
             'footer';
-        grid-template: auto / 10rem 80rem 10 rem;
+        grid-template: auto / 10rem 80rem 10rem;
     }
 
     .header-logo {
@@ -141,4 +168,3 @@ footer {
     }
 
 }
-
