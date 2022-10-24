@@ -7,7 +7,7 @@ function cambiarSection() {
 
 function llamarPlaylistRock() {   
     playlist = 2 
-    fetch('https://mocki.io/v1/92f00cb6-f708-45ea-a19d-f4a443ea22b8')
+    fetch('https://mocki.io/v1/e41359b3-46d8-43b6-ba62-3aaaaa916a9d')
         .then(response => response.json())
         .then(json => {
             console.log(json)
@@ -21,11 +21,7 @@ function printPlaylist(listaCanciones) {
     genero.innerHTML = `
     ${genero.innerHTML}
     <div class="card">
-    <img src="${cancion.img}">
-    <video width="230" height="240" controls>
-        <source src="${cancion.src.id}">
-    </video>
-    <iframe width="230" src="${cancion.src.id}"></iframe>
+    <iframe width="230" height="240" src="${cancion.src.id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h3>${cancion.name}</h3>
     </card>
     `;
