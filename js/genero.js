@@ -1,39 +1,33 @@
 function cambiarSection() {
     const container = document.getElementById('section')
-        container.innerHTML = `<div class="genero" id="genero"></div>`;
-    }
+        container.innerHTML = `
+        <div class="genero" id="genero"></div>
+        `;
+}
 
-function llamarPokemones() {   
+function llamarPlaylistRock() {   
     playlist = 2 
-    fetch('https://openwhyd.org/adrien/playlist/2?format=json&limit=12')
+    fetch('https://mocki.io/v1/92f00cb6-f708-45ea-a19d-f4a443ea22b8')
         .then(response => response.json())
         .then(json => {
-            //printPlaylist(json.results);
             console.log(json)
+            printPlaylist(json);       
     });
 }
 
-// Pinta todos los pokemos insertando un HTML dentro del #container
-function printPlaylist(rock) {
+function printPlaylist(listaCanciones) {
     const genero = document.getElementById('genero')
-    rock.forEach(track => {
+    listaCanciones.forEach(cancion => {
     genero.innerHTML = `
     ${genero.innerHTML}
     <div class="card">
-    <img src="https://pokeres.bastionbot.org/images/pokemon/${getPokemonId(pokemon.url)}.png"/>
-    <span>Nº.${getPokemonId(pokemon.url)}</span>
-    <h2>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>
+    <iframe width="220" src="${cancion.src.id}"></iframe>
+    <h3>${cancion.name}</h3>
     </card>
     `;
     });
 }
 
-// En esta ruta de la API no nos viene el id de cada pokemon, pero si que nos viene
-// una URL, para poder obtener todos los datos de ese pokemon, la cual contiene su ID
-// así que le extraigo el ID a la URL
-function getPokemonId(url) {
-    return url.replace('https://pokeapi.co/api/v2/pokemon/', '').replace('/','')
-}    
 
 window.onload = function(){
     var botonEnviar = document.getElementById("botonEnviar");
@@ -44,40 +38,43 @@ window.onload = function(){
         let tipoDeBuscador = document.getElementById("buscadorGenero")
         let inputUsuario = tipoDeBuscador.value
         let inputValido = true;
-        switch(inputUsuario){
-            case "rock":
-                cambiarSection()
-                llamarPokemones()
-                break;
-            case "pop": 
-            cambiarSection()
-            printPokemons(pokemons)
-                break;
-            case "clasica":
-                cambiarSection()
-                printPokemons(pokemons)
-                break;
-            case "techno":
-                cambiarSection()
-                printPokemons(pokemons)
-                break;
-            default:
-                alert(inputUsuario + " no es un tipo de buscador válido!");
-                inputValido = false;
-        }
         if(inputValido){
             
             let tituloElement = document.getElementById("pulso")
                 tituloElement.classList.add("pulsoActivado");
 
             setTimeout(()=>{
-                console.log(url)
-                window.location.href = url
-                
+                cargarCategoriaSegunInput(inputUsuario) 
             }, 1800
       
             )
         }
-    })
+    });  
+   
+    function cargarCategoriaSegunInput(loQueMePasaron) {        
+        switch (loQueMePasaron) {
+            case "rock":
+                cambiarSection()
+                llamarPlaylistRock()
+                break;
+            case "pop": 
+                cambiarSection()
+                llamarPlaylistRock()
+                break;
+            case "clasica":
+                cambiarSection()
+                llamarPlaylistRock()
+                break;
+            case "techno":
+                cambiarSection()
+                llamarPlaylistRock()
+                break;
+            default:
+                alert(inputUsuario + " no es un tipo de buscador válido!");
+                inputValido = false;
+            }  
+    }
 }
 
+
+ 

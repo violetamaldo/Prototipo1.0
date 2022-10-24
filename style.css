@@ -95,17 +95,20 @@ form {
 }
 
 #genero{
-    width: min(100%, 1000px);
-    margin: 100px auto;
-    display: flex;
+    /* width: min(100%, 1000px); */
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 .card{
     width: 230px;
-    margin-top: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 50px;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
