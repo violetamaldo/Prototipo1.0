@@ -5,7 +5,7 @@ function cambiarSection() {
 
 function llamarPokemones() {   
     playlist = 2 
-    fetch('http://openwhyd.org/adrien/playlist/2?format=json&limit=12')
+    fetch('https://openwhyd.org/adrien/playlist/2?format=json&limit=12')
         .then(response => response.json())
         .then(json => {
             //printPlaylist(json.results);
