@@ -21,7 +21,12 @@ function printPlaylist(listaCanciones) {
     genero.innerHTML = `
     ${genero.innerHTML}
     <div class="card">
-    <iframe width="220" src="${cancion.src.id}"></iframe>
+    <img src="${cancion.img}">
+    <span>
+    <video width="230" height="240" controls>
+        <source src="${cancion.src}">
+    </video>
+    </span>
     <h3>${cancion.name}</h3>
     </card>
     `;
