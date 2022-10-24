@@ -95,11 +95,6 @@ form {
 }
 
 #genero{
-    /* width: min(100%, 1000px); */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
