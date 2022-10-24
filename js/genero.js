@@ -24,7 +24,7 @@ function printPlaylist(listaCanciones) {
     <img src="${cancion.img}">
     <span>
     <video width="230" height="240" controls>
-        <source src="${cancion.src.id}">
+        <source src="${cancion.src["id"]}">
     </video>
     </span>
     <h3>${cancion.name}</h3>
@@ -32,7 +32,6 @@ function printPlaylist(listaCanciones) {
     `;
     });
 }
-
 
 window.onload = function(){
     var botonEnviar = document.getElementById("botonEnviar");
