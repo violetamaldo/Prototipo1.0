@@ -8,7 +8,7 @@ api rest desde js
 Diseño: <br>checar<br>
         
 				alineación
-		<br>		orden y márgenes entre los elementos
+			    <br>orden y márgenes entre los elementos
 			    <br>fotografía de calidad y optimizada para web
 				<br>paleta de colores acorde a la temática
 				<br>logo usado en el sitio web
