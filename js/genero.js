@@ -6,6 +6,7 @@ function cambiarSection() {
         main {
             background-color: transparent;
             background-image: url(img/notitas.png);
+        
         }
         </style>
         `;
