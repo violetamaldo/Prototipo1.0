@@ -2,6 +2,12 @@ function cambiarSection() {
     const container = document.getElementById('section')
         container.innerHTML = `
         <div class="genero" id="genero"></div>
+        <style> 
+        main {
+            background-color: transparent;
+            background-image: url(img/notitas.png);
+        }
+        </style>
         `;
 }
 
